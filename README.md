@@ -4,7 +4,7 @@ The purpose of this repo is to show @dbarb911 how git works and how to create as
 
 For new Assets:
 - make sure you are on the ```new-assets``` branch 
-- go to the assets directory
+- go to the /Assets directory
 - click on the correct asset sub directory
 - save assets in there
 
