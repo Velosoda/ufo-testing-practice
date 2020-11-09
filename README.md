@@ -1,6 +1,6 @@
 # ufo-testing-practice
 
-The purpose of this repo is to show @dyl911 how git works and how to create assets for a game
+The purpose of this repo is to show @dbarb911 how git works and how to create assets for a game
 
 For new Assets:
 - make sure you are on the ```new-assets``` branch 
