@@ -7,3 +7,6 @@ For new Assets:
 - go to the assets directory
 - click on the correct asset sub directory
 - save assets in there
+
+
+Theres going to be more here like my code for the game.
