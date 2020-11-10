@@ -29,9 +29,18 @@ func apply_friction(reverse_force):
 	if motion.length() > reverse_force:
 		motion -= motion.normalized() * reverse_force
 	else:
+		$AnimatedSprite.play("idle")
 		motion = Vector2.ZERO
 
 func apply_movement(acceleration):
+	#moving right
+	if motion.x > 0:
+		$AnimatedSprite.set_flip_h(true)
+		$AnimatedSprite.play("flying")
+	#moving left
+	elif motion.x < 0:
+		$AnimatedSprite.set_flip_h(false)
+		$AnimatedSprite.play("flying")
 	motion += acceleration
 	motion = motion.clamped(MAX_SPEED)
-		
+###doing things here 

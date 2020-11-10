@@ -19,6 +19,10 @@ config/name="ufo"
 run/main_scene="res://Scenes/Ufo/Ufo.tscn"
 config/icon="res://icon.png"
 
+[gdnative]
+
+singletons=[  ]
+
 [input]
 
 up={
