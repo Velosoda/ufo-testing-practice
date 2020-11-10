@@ -32,12 +32,12 @@ position = Vector2( 505.224, 299.534 )
 collision_mask = 2147483649
 script = ExtResource( 2 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( 3.3125, 12.0625, 13.25, 2.75, 16.3125, -0.625, 16.0423, -3.86734, 12.5067, -6.96094, 6.14275, -10.85, -5.87806, -10.9384, -15.0704, -4.75123, -15.6008, -0.4202, -3.13802, 11.9542 )
-
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 3 )
 animation = "flying"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 3.3125, 12.0625, 13.25, 2.75, 16.3125, -0.625, 16.0423, -3.86734, 12.5067, -6.96094, 6.14275, -10.85, -5.87806, -10.9384, -15.0704, -4.75123, -15.6008, -0.4202, -3.13802, 11.9542 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
