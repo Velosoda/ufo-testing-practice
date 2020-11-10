@@ -9,19 +9,19 @@ flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 32, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=2]
 flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="SpriteFrames" id=4]
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ SubResource( 1 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 3 ) ],
+"frames": [ SubResource( 2 ) ],
 "loop": true,
 "name": "flying",
 "speed": 1.0
@@ -36,8 +36,8 @@ script = ExtResource( 2 )
 polygon = PoolVector2Array( 3.3125, 12.0625, 13.25, 2.75, 16.3125, -0.625, 16.0423, -3.86734, 12.5067, -6.96094, 6.14275, -10.85, -5.87806, -10.9384, -15.0704, -4.75123, -15.6008, -0.4202, -3.13802, 11.9542 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 4 )
-animation = "idle"
+frames = SubResource( 3 )
+animation = "flying"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
