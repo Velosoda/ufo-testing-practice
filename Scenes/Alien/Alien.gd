@@ -1,10 +1,9 @@
 extends KinematicBody2D
 
 
-const MAX_SPEED = 500
-const ACCELERATION = 2000
+const MAX_SPEED = 150
+const ACCELERATION = 1500
 var motion = Vector2.ZERO
-const DECELERATION = 100
 
 
 #Vector2.zero is like an analog stick in center
@@ -12,7 +11,7 @@ const DECELERATION = 100
 func _physics_process(delta):
 	var axis = get_input_axis()
 	if axis == Vector2.ZERO:
-		apply_friction(DECELERATION * delta)
+		apply_friction(ACCELERATION * delta)
 	else:
 		apply_movement(axis * ACCELERATION * delta)
 	motion = move_and_slide(motion)
@@ -34,13 +33,12 @@ func apply_friction(reverse_force):
 
 func apply_movement(acceleration):
 	#moving right
-	if Input.is_action_pressed("right") == true:
+	if motion.x > 0:
 		$AnimatedSprite.set_flip_h(true)
-		$AnimatedSprite.play("flying")
+		$AnimatedSprite.play("moving")
 	#moving left
-	elif Input.is_action_pressed("left") == true:
+	elif motion.x < 0:
 		$AnimatedSprite.set_flip_h(false)
-		$AnimatedSprite.play("flying")
+		$AnimatedSprite.play("moving")
 	motion += acceleration
 	motion = motion.clamped(MAX_SPEED)
-###doing things here 
