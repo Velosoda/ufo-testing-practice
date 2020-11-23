@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/SpaceMonster/SpaceMonster.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Planets/Planet.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Ufo/Ufo.tscn" type="PackedScene" id=3]
+
+[node name="TestRoom" type="Node2D"]
+
+[node name="Ufo" parent="." instance=ExtResource( 3 )]
+position = Vector2( 509.714, 298.412 )
+
+[node name="SpaceMonsters" type="Node" parent="."]
+
+[node name="SpaceMonster" parent="SpaceMonsters" instance=ExtResource( 1 )]
+position = Vector2( 104.152, 667.346 )
+
+[node name="SpaceMonster2" parent="SpaceMonsters" instance=ExtResource( 1 )]
+position = Vector2( 76.6318, 216.412 )
+
+[node name="SpaceMonster3" parent="SpaceMonsters" instance=ExtResource( 1 )]
+position = Vector2( 120.886, 898.96 )
+
+[node name="SpaceMonster4" parent="SpaceMonsters" instance=ExtResource( 1 )]
+position = Vector2( 88.9897, 449.825 )
+
+[node name="Planet" type="Node" parent="."]
+
+[node name="Planet" parent="Planet" instance=ExtResource( 2 )]
+position = Vector2( 1962.78, 443.499 )

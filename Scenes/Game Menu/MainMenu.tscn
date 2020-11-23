@@ -1,0 +1,159 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Menu Buttons/blue_button12.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Menu Buttons/blue_button11.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Background/Overworld Space Background.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Game Menu/Main Menu.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[node name="Main Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Game Name" type="Label" parent="VBoxContainer"]
+margin_right = 1900.0
+margin_bottom = 49.0
+custom_fonts/font = SubResource( 1 )
+text = "Here is the name of the Game "
+
+[node name="Hovered Description" type="Label" parent="VBoxContainer"]
+margin_top = 53.0
+margin_right = 1900.0
+margin_bottom = 73.0
+custom_fonts/font = SubResource( 3 )
+
+[node name="NewGameButton" type="TextureButton" parent="VBoxContainer"]
+margin_top = 77.0
+margin_right = 1900.0
+margin_bottom = 126.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 2 )
+
+[node name="NewGameLabel" type="Label" parent="VBoxContainer/NewGameButton"]
+anchor_right = 0.191
+anchor_bottom = 1.0
+margin_right = 0.104
+custom_fonts/font = SubResource( 2 )
+text = "New
+Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LoadGameButton" type="TextureButton" parent="VBoxContainer"]
+margin_top = 130.0
+margin_right = 1900.0
+margin_bottom = 179.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 2 )
+
+[node name="LoadGameLabel" type="Label" parent="VBoxContainer/LoadGameButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 3.8147e-06
+margin_bottom = 3.8147e-06
+custom_fonts/font = SubResource( 2 )
+text = "Load
+Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionsButton" type="TextureButton" parent="VBoxContainer"]
+margin_top = 183.0
+margin_right = 1900.0
+margin_bottom = 232.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 2 )
+
+[node name="OptionsLabel" type="Label" parent="VBoxContainer/OptionsButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 2 )
+text = "Optio
+ns"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestRoomButton" type="TextureButton" parent="VBoxContainer"]
+margin_top = 236.0
+margin_right = 1900.0
+margin_bottom = 285.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 2 )
+
+[node name="TestRoomLabel" type="Label" parent="VBoxContainer/TestRoomButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 2 )
+text = "Test
+Room"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuitGameButton" type="TextureButton" parent="VBoxContainer"]
+margin_top = 289.0
+margin_right = 1900.0
+margin_bottom = 338.0
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 2 )
+
+[node name="QuitGameLabel" type="Label" parent="VBoxContainer/QuitGameButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 2 )
+text = "Quit
+Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="mouse_entered" from="VBoxContainer/NewGameButton" to="." method="_on_NewGameButton_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/NewGameButton" to="." method="_on_NewGameButton_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/NewGameButton" to="." method="_on_NewGameButton_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/LoadGameButton" to="." method="_on_LoadGameButton_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/LoadGameButton" to="." method="_on_LoadGameButton_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/LoadGameButton" to="." method="_on_LoadGameButton_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/OptionsButton" to="." method="_on_OptionsButton_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/OptionsButton" to="." method="_on_OptionsButton_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/OptionsButton" to="." method="_on_OptionsButton_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/TestRoomButton" to="." method="_on_TestRoomButton_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/TestRoomButton" to="." method="_on_TestRoomButton_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/TestRoomButton" to="." method="_on_TestRoomButton_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/QuitGameButton" to="." method="_on_QuitGameButton_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/QuitGameButton" to="." method="_on_QuitGameButton_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/QuitGameButton" to="." method="_on_QuitGameButton_pressed"]

@@ -16,8 +16,13 @@ _global_script_class_icons={
 [application]
 
 config/name="ufo"
-run/main_scene="res://Scenes/SolarSystem/SolarSystem.tscn"
+run/main_scene="res://Scenes/Game Menu/MainMenu.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
 
 [gdnative]
 
