@@ -21,41 +21,41 @@ func _on_QuitGameButton_pressed():
 
 
 func _on_NewGameButton_mouse_entered():
-	$"VBoxContainer/Hovered Description".text = "New Game: Start a new game"
+	$"Hovered Description".text = "New Game: Start a new game"
 
 
 func _on_LoadGameButton_mouse_entered():
-	$"VBoxContainer/Hovered Description".text = "Load Game: Continue playing from a save file"
+	$"Hovered Description".text = "Load Game: Continue playing from a save file"
 
 
 func _on_OptionsButton_mouse_entered():
-	$"VBoxContainer/Hovered Description".text = "Options: Set the in game options"
+	$"Hovered Description".text = "Options: Set the in game options"
 
 
 func _on_TestRoomButton_mouse_entered():
-	$"VBoxContainer/Hovered Description".text = "Test Room: I play here"
+	$"Hovered Description".text = "Test Room: I play here"
 
 
 func _on_QuitGameButton_mouse_entered():
-	$"VBoxContainer/Hovered Description".text = "Quit Game: Exits the game"
+	$"Hovered Description".text = "Quit Game: Exits the game"
 
 
 
 func _on_NewGameButton_mouse_exited():
-	$"VBoxContainer/Hovered Description".text = ""
+	$"Hovered Description".text = ""
 
 
 func _on_LoadGameButton_mouse_exited():
-	$"VBoxContainer/Hovered Description".text = ""
+	$"Hovered Description".text = ""
 
 
 func _on_OptionsButton_mouse_exited():
-	$"VBoxContainer/Hovered Description".text = ""
+	$"Hovered Description".text = ""
 
 
 func _on_TestRoomButton_mouse_exited():
-	$"VBoxContainer/Hovered Description".text = ""
+	$"Hovered Description".text = ""
 
 
 func _on_QuitGameButton_mouse_exited():
-	$"VBoxContainer/Hovered Description".text = ""
+	$"Hovered Description".text = ""

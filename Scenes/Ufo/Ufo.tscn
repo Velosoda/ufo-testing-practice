@@ -5,12 +5,10 @@
 [ext_resource path="res://Assets/Background/Overworld Space Background.png" type="Texture" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 32, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=2]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 32, 32 )
 
@@ -42,6 +40,7 @@ polygon = PoolVector2Array( 3.3125, 12.0625, 13.25, 2.75, 16.3125, -0.625, 16.04
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 smoothing_enabled = true
+smoothing_speed = 1.0
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="Camera2D"]
 scroll_limit_begin = Vector2( 1000, 1000 )
