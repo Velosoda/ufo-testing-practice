@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Test Ufo.png-f8404cb110d24d5b9cec413cf0558eb1.stex"
+path="res://.import/Main Menu One Layer SSheet.png-604c0e1114d927b0e28e6b52d4e78e05.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Players/Test Ufo.png"
-dest_files=[ "res://.import/Test Ufo.png-f8404cb110d24d5b9cec413cf0558eb1.stex" ]
+source_file="res://Assets/Players/Main Menu One Layer SSheet.png"
+dest_files=[ "res://.import/Main Menu One Layer SSheet.png-604c0e1114d927b0e28e6b52d4e78e05.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
