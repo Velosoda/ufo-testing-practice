@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Weapons/Bullets/Bullet.tscn" type="PackedScene" id=1]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 2.37702
+
+[node name="PlayersBullet" instance=ExtResource( 1 )]
+collision_layer = 2147483680
+collision_mask = 5
+
+[node name="AnimatedSprite" parent="." index="1"]
+position = Vector2( 0.297302, 0.445953 )
+
+[node name="Area2D" type="Area2D" parent="." index="3"]
+collision_layer = 32
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
+rotation = 1.5708
+shape = SubResource( 1 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

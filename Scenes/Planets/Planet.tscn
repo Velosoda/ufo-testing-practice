@@ -1,7 +1,251 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=63 format=2]
 
-[ext_resource path="res://Assets/Planets/Dark Moon.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Planets/Planet 1AF.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Planets/Planet.gd" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 98, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 196, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 294, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 392, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 490, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 588, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 1 )
+region = Rect2( 686, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 1 )
+region = Rect2( 784, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 1 )
+region = Rect2( 882, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 1 )
+region = Rect2( 980, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 1 )
+region = Rect2( 1078, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 1 )
+region = Rect2( 1176, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 1 )
+region = Rect2( 1274, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 1 )
+region = Rect2( 1372, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 1 )
+region = Rect2( 1470, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 1 )
+region = Rect2( 1568, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 1 )
+region = Rect2( 1666, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 1 )
+region = Rect2( 1764, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 1 )
+region = Rect2( 1862, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 1 )
+region = Rect2( 1960, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 1 )
+region = Rect2( 2058, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 1 )
+region = Rect2( 2156, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 1 )
+region = Rect2( 2254, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 1 )
+region = Rect2( 2352, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 1 )
+region = Rect2( 2450, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 1 )
+region = Rect2( 2548, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 1 )
+region = Rect2( 2646, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 1 )
+region = Rect2( 2744, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 1 )
+region = Rect2( 2842, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 1 )
+region = Rect2( 2940, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 1 )
+region = Rect2( 3038, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 1 )
+region = Rect2( 3136, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 1 )
+region = Rect2( 3234, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 1 )
+region = Rect2( 3332, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 1 )
+region = Rect2( 3430, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 1 )
+region = Rect2( 3528, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 1 )
+region = Rect2( 3626, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 1 )
+region = Rect2( 3724, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 1 )
+region = Rect2( 3822, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 1 )
+region = Rect2( 3920, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 1 )
+region = Rect2( 4018, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 1 )
+region = Rect2( 4116, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 1 )
+region = Rect2( 4214, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=45]
+atlas = ExtResource( 1 )
+region = Rect2( 4312, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=46]
+atlas = ExtResource( 1 )
+region = Rect2( 4410, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=47]
+atlas = ExtResource( 1 )
+region = Rect2( 4508, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=48]
+atlas = ExtResource( 1 )
+region = Rect2( 4606, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=49]
+atlas = ExtResource( 1 )
+region = Rect2( 4704, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 1 )
+region = Rect2( 4802, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 1 )
+region = Rect2( 4900, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 1 )
+region = Rect2( 4998, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 1 )
+region = Rect2( 5096, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 1 )
+region = Rect2( 5194, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 1 )
+region = Rect2( 5292, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 1 )
+region = Rect2( 5390, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 1 )
+region = Rect2( 5488, 0, 98, 99 )
+
+[sub_resource type="AtlasTexture" id=58]
+atlas = ExtResource( 1 )
+region = Rect2( 5586, 0, 98, 99 )
+
+[sub_resource type="SpriteFrames" id=59]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ) ],
+"loop": true,
+"name": "planetspinning",
+"speed": 10.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=60]
+radius = 120.699
+height = 0.0
 
 [node name="Planet" type="Node2D"]
 script = ExtResource( 2 )
@@ -9,11 +253,17 @@ script = ExtResource( 2 )
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 4
 
-[node name="Sprite" type="Sprite" parent="Area2D"]
-texture = ExtResource( 1 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
+scale = Vector2( 2, 2 )
+frames = SubResource( 59 )
+animation = "planetspinning"
+frame = 55
+playing = true
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-polygon = PoolVector2Array( -240.018, -124.952, -323.297, -25.6822, -339.244, 181.134, -246.746, 293.814, -142.474, 398.085, 67.1887, 441.67, 264.996, 373.634, 474.143, 377.414, 474.143, 321.977, 425.006, 241.342, 368.791, 251.769, 362.063, 14.6366, 294.37, -147.52, 195.84, -217.445, 81.204, -242.678, -115.642, -243.932 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2( -0.94356, 2.47445 )
+shape = SubResource( 60 )
 
 [node name="Label" type="Label" parent="Area2D"]
 margin_left = 260.628

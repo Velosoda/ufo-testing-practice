@@ -34,11 +34,11 @@ func apply_friction(reverse_force):
 
 func apply_movement(acceleration):
 	#moving right
-	if motion.x > 0:
+	if Input.is_action_pressed("right") == true:
 		$AnimatedSprite.set_flip_h(true)
 		$AnimatedSprite.play("flying")
 	#moving left
-	elif motion.x < 0:
+	elif Input.is_action_pressed("left") == true:
 		$AnimatedSprite.set_flip_h(false)
 		$AnimatedSprite.play("flying")
 	motion += acceleration
