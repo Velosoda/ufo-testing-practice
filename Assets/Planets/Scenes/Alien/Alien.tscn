@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Npcs/TestAnimatedSprite.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Alien/Alien.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Weapons/Weapons/TestWeapon/TestGun.tscn" type="PackedScene" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 6.88757
+height = 15.135
+
+[sub_resource type="Animation" id=2]
+resource_name = "shoot_recoil"
+length = 0.11
+tracks/0/type = "value"
+tracks/0/path = NodePath("GunPointer/Gun:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 20, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("GunPointer/RayCast2D:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -180.0, -90.0 ]
+}
+
+[node name="Alien" type="KinematicBody2D"]
+scale = Vector2( 0.5, 0.5 )
+collision_layer = 16
+collision_mask = 13
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( 0.220322, 0.803333 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" parent="." instance=ExtResource( 1 )]
+animation = "idle_east"
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 13
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0.0982056, 2.21189 )
+shape = SubResource( 1 )
+
+[node name="GunPointer" parent="." instance=ExtResource( 3 )]
+
+[node name="Recoil" type="AnimationPlayer" parent="."]
+anims/shoot_recoil = SubResource( 2 )

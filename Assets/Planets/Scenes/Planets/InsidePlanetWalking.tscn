@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scenes/Planets/InsidePlanet/PlanetTileSet.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Npcs/Civilian.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scenes/Alien/Alien.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Planets/InsidePlanetWalking.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Menu Buttons/blue_button12.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Menu Buttons/blue_button11.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[node name="InsidePlanetWalking" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TextureButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 1 )
+text = "Back
+<-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" type="Node" parent="."]
+
+[node name="Alien" parent="Player" instance=ExtResource( 4 )]
+position = Vector2( -403.843, -316.825 )
+scale = Vector2( 1, 1 )
+z_index = 2
+
+[node name="Camera2D" type="Camera2D" parent="Player/Alien"]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+smoothing_speed = 1.0
+editor_draw_screen = false
+editor_draw_limits = true
+
+[node name="Npcs" type="Node" parent="."]
+
+[node name="CivilianCharacters" type="Node" parent="Npcs"]
+
+[node name="Civilian" parent="Npcs/CivilianCharacters" instance=ExtResource( 2 )]
+position = Vector2( -322.901, -348.833 )
+z_index = 2
+
+[node name="FactionCharacters" type="Node" parent="Npcs"]
+
+[node name="GovernmentCharacters" type="Node" parent="Npcs"]
+
+[node name="Navigation2D" parent="." instance=ExtResource( 1 )]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
